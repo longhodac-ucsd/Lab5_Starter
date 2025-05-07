@@ -12,11 +12,11 @@ function init() {
   hornSelect.addEventListener('change', () => {
     const target = hornSelect.value;
     if(target){ 
-      partyHornImg.src = './assets/images/' + target + '.svg';
+      partyHornImg.src = 'assets/images/' + target + '.svg';
       partyHornImg.alt = target;
-      sound.src = './assets/audio/' + target + '.mp3';
+      sound.src = 'assets/audio/' + target + '.mp3';
     }else{
-      partyHornImg.src = './assets/images/no-image.png';
+      partyHornImg.src = 'assets/images/no-image.png';
       partyHornImg.alt = "No image selected";
       sound.alt = target;
     }
@@ -30,16 +30,16 @@ function init() {
 
   function updateVolumeIcon(value) {
     if (value === 0) {
-      volumeIcon.src = './assets/icons/volume-level-0.svg';
+      volumeIcon.src = 'assets/icons/volume-level-0.svg';
       volumeIcon.alt = 'Volume muted';
     } else if (value > 0 && value < 33) {
-      volumeIcon.src = './assets/icons/volume-level-1.svg';
+      volumeIcon.src = 'assets/icons/volume-level-1.svg';
       volumeIcon.alt = 'Volume level 1';
     } else if (value >= 33 && value < 67) {
-      volumeIcon.src = './assets/icons/volume-level-2.svg';
+      volumeIcon.src = 'assets/icons/volume-level-2.svg';
       volumeIcon.alt = 'Volume level 2';
     } else {
-      volumeIcon.src = './assets/icons/volume-level-3.svg';
+      volumeIcon.src = 'assets/icons/volume-level-3.svg';
       volumeIcon.alt = 'Volume level 3';
     }
   }
